@@ -2,11 +2,12 @@ package ZOO;
 
 public class Animal {
 
-    public String name;
-    public int age;
-    public String color;
-    public int weight;
+   protected String name;
+    protected  int age;
+   protected String color;
+   protected int weight;
 
+   //public int lastChar = Integer.parseInt((""+age).substring((""+age).length()-1));
 
     public String getName() {
         return name;
@@ -54,10 +55,25 @@ public class Animal {
         System.out.println("Я иду");
     }
 
+
+
+
+   /* private String voz() {
+        if (age==1) {
+            return  " год";
+
+        } else if (age>=5 && age <=20) {
+            return " лет ";
+
+
+        }/* else if (lastChar>1 && lastChar<5) {
+            return "Привет! меня зовут " + name + ", мне " + age + " года, я вешу - "
+                    + weight + " кг, мой цвет - " + color +"" ;
+    }*/
+
     @Override
     public String toString() {
-        return "Привет! меня зовут " + name + ", мне " + age + "лет, я вешу - "
-                + weight + " кг, мой цвет - " + color +"" ;
-
+        return "Привет! меня зовут " + name + ", мне " + age +   ", я вешу - "
+                + weight + " кг, мой цвет - " + color + "";
     }
 }

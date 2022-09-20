@@ -1,6 +1,6 @@
 package ZOO;
 
-public enum Animals {
+public enum Command {
 
     ADD,
     LIST,

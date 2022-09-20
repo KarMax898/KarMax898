@@ -5,10 +5,10 @@ import java.util.Scanner;
 
 public class App {
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws NullPointerException {
 
 
-     /*   Cat cat = new Cat();
+  /*  Cat cat = new Cat();
         cat.say();
 
         Dog dog = new Dog();
@@ -30,25 +30,25 @@ public class App {
         while (proverka) {
 
             System.out.println("Веберите команду add/list/exit");
-            Animals an = Animals.valueOf(vvod.nextLine().toUpperCase().trim());
+            Command an = Command.valueOf(vvod.next().toUpperCase().trim());
             switch (an){
                 case ADD -> {
                     System.out.println(" Выберите животное(cat/dog/duck)");
 
-                    String ani = vvod.nextLine();
+                    String ani = vvod.next();
 
 
                     switch (ani) {
                         case "cat" -> {
                             System.out.println("Какое имя?");
                             Cat cat = new Cat();
-                            cat.setName(vvod.nextLine());
+                            cat.setName(vvod.next());
                             System.out.println("Какой возраст?");
-                            cat.setAge(Integer.parseInt(vvod.nextLine()));
+                            cat.setAge(vvod.nextInt());
                             System.out.println("Какой цвет?");
-                            cat.setColor(vvod.nextLine());
+                            cat.setColor(vvod.next());
                             System.out.println("Какой вес?");
-                            cat.setWeight(Integer.parseInt(vvod.nextLine()));
+                            cat.setWeight(vvod.nextInt());
                             animals.add(cat);
                             cat.say();
                         }
@@ -79,11 +79,8 @@ public class App {
                             duck.fly();
                             duck.say();
                         }
-                        default -> {
-                        }
+                        default -> System.out.println( "Нет такого животного");
                     }
-
-
                 }
                 case LIST -> System.out.println(animals);
                 case EXIT -> proverka = false;
@@ -91,8 +88,8 @@ public class App {
 
 
 
-
             }
+
 
 
             }

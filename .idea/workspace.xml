@@ -4,20 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ddd9b471-f01a-48c9-bdea-1ce97025ed4c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ZOO/Animal.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ZOO/Animals.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ZOO/App.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ZOO/Cat.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ZOO/Dog.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ZOO/Duck.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ZOO/IFlying.java" afterDir="false" />
+    <list default="true" id="ddd9b471-f01a-48c9-bdea-1ce97025ed4c" name="Changes" comment="Changes1">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ZOO/AnimalFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ZOO/Animal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ZOO/Animal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ZOO/Animals.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ZOO/Command.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ZOO/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ZOO/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ZOO/Cat.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ZOO/Cat.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,13 +21,18 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Interface" />
         <option value="Enum" />
+        <option value="Class" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -45,13 +44,13 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ZOO.App" />
@@ -81,6 +80,14 @@
       <option name="presentableId" value="Default" />
       <updated>1663148124431</updated>
     </task>
+    <task id="LOCAL-00001" summary="Changes1">
+      <created>1663168745134</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1663168745134</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -93,5 +100,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Changes1" />
+    <option name="LAST_COMMIT_MESSAGE" value="Changes1" />
   </component>
 </project>
