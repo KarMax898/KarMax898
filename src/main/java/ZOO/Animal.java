@@ -2,12 +2,11 @@ package ZOO;
 
 public class Animal {
 
-   protected String name;
-    protected  int age;
-   protected String color;
-   protected int weight;
+    protected String name;
+    protected int age;
+    protected String color;
+    protected int weight;
 
-   //public int lastChar = Integer.parseInt((""+age).substring((""+age).length()-1));
 
     public String getName() {
         return name;
@@ -41,39 +40,46 @@ public class Animal {
         this.weight = weight;
     }
 
-    public void eat(){
+    public void eat() {
         System.out.println(" Я ем ");
 
     }
-    public void say(){
-        System.out.println("Я говорю" );
+
+    public void say() {
+        System.out.println("Я говорю");
     }
-    public void drink(){
+
+    public void drink() {
         System.out.println(" Я пью");
     }
-    public void go(){
+
+    public void go() {
         System.out.println("Я иду");
     }
 
 
 
 
-   /* private String voz() {
-        if (age==1) {
-            return  " год";
+    private String pokazatelVozrasta() {
 
-        } else if (age>=5 && age <=20) {
+        int lastNumber = age % 10;
+        int lastDoubleNumber = age % 100;
+        if (lastNumber == 1 && lastNumber != 11 && lastDoubleNumber != 11) {
+            return " год";
+
+        } else if (lastDoubleNumber > 11 && lastDoubleNumber < 14) {
             return " лет ";
+        } else if (lastNumber > 1 && lastNumber <  5 ) {
+            return " года";
+        }else{
+            return " лет";
+        }
 
-
-        }/* else if (lastChar>1 && lastChar<5) {
-            return "Привет! меня зовут " + name + ", мне " + age + " года, я вешу - "
-                    + weight + " кг, мой цвет - " + color +"" ;
-    }*/
+    }
 
     @Override
     public String toString() {
-        return "Привет! меня зовут " + name + ", мне " + age +   ", я вешу - "
+        return "Привет! меня зовут " + name + ", мне " + age + pokazatelVozrasta() + ", я вешу - "
                 + weight + " кг, мой цвет - " + color + "";
     }
 }

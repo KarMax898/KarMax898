@@ -55,26 +55,26 @@ public class App {
                         case "dog" -> {
                             System.out.println("Какое имя?");
                             Dog dog = new Dog();
-                            dog.setName(vvod.nextLine());
+                            dog.setName(vvod.next());
                             System.out.println("Какой возраст?");
-                            dog.setAge(Integer.parseInt(vvod.nextLine()));
+                            dog.setAge(vvod.nextInt());
                             System.out.println("Какой цвет?");
-                            dog.setColor(vvod.nextLine());
+                            dog.setColor(vvod.next());
                             System.out.println("Какой вес?");
-                            dog.setWeight(Integer.parseInt(vvod.nextLine()));
+                            dog.setWeight(vvod.nextInt());
                             animals.add(dog);
                             dog.say();
                         }
                         case "duck" -> {
                             System.out.println("Какое имя?");
                             Duck duck = new Duck();
-                            duck.setName(vvod.nextLine());
+                            duck.setName(vvod.next());
                             System.out.println("Какой возраст?");
-                            duck.setAge(Integer.parseInt(vvod.nextLine()));
+                            duck.setAge(vvod.nextInt());
                             System.out.println("Какой цвет?");
-                            duck.setColor(vvod.nextLine());
+                            duck.setColor(vvod.next());
                             System.out.println("Какой вес?");
-                            duck.setWeight(Integer.parseInt(vvod.nextLine()));
+                            duck.setWeight(vvod.nextInt());
                             animals.add(duck);
                             duck.fly();
                             duck.say();

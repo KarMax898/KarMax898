@@ -4,14 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ddd9b471-f01a-48c9-bdea-1ce97025ed4c" name="Changes" comment="Changes1">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ZOO/AnimalFactory.java" afterDir="false" />
+    <list default="true" id="ddd9b471-f01a-48c9-bdea-1ce97025ed4c" name="Changes" comment="Changes2">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ZOO/Animal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ZOO/Animal.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ZOO/Animals.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ZOO/Command.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ZOO/AnimalFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ZOO/AnimalFactory.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ZOO/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ZOO/App.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ZOO/Cat.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ZOO/Cat.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,13 +41,14 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "last_opened_file_path": "E:/Java_Otus/Otus_Homework"
   }
-}</component>
+}]]></component>
   <component name="RunManager">
     <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ZOO.App" />
@@ -87,7 +85,14 @@
       <option name="project" value="LOCAL" />
       <updated>1663168745134</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Changes2">
+      <created>1663661295660</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1663661295660</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -103,6 +108,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Changes1" />
-    <option name="LAST_COMMIT_MESSAGE" value="Changes1" />
+    <MESSAGE value="Changes2" />
+    <option name="LAST_COMMIT_MESSAGE" value="Changes2" />
   </component>
 </project>
