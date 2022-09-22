@@ -67,7 +67,7 @@ public class Animal {
         if (lastNumber == 1 && lastNumber != 11 && lastDoubleNumber != 11) {
             return " год";
 
-        } else if (lastDoubleNumber > 11 && lastDoubleNumber < 14) {
+        } else if (lastDoubleNumber >= 11 && lastDoubleNumber <= 14) {
             return " лет ";
         } else if (lastNumber > 1 && lastNumber <  5 ) {
             return " года";
@@ -79,7 +79,7 @@ public class Animal {
 
     @Override
     public String toString() {
-        return "Привет! меня зовут " + name + ", мне " + age + pokazatelVozrasta() + ", я вешу - "
-                + weight + " кг, мой цвет - " + color + "";
+        return "\n  Привет! меня зовут " + name + ", мне " + age + pokazatelVozrasta() + ", я вешу - "
+                + weight + " кг, мой цвет - " + color + " " ;
     }
 }
