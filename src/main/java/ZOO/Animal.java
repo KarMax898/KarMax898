@@ -64,15 +64,18 @@ public class Animal {
 
         int lastNumber = age % 10;
         int lastDoubleNumber = age % 100;
+
         if (lastNumber == 1 && lastNumber != 11 && lastDoubleNumber != 11) {
             return " год";
 
-        } else if (lastDoubleNumber > 11 && lastDoubleNumber < 14) {
+        } else if (lastDoubleNumber > 11 && lastDoubleNumber < 14  ) {
             return " лет ";
 
         } else if (lastNumber > 1 && lastNumber <  5 ) {
             return " года";
-        }else{
+
+
+        } else{
             return " лет";
         }
 
