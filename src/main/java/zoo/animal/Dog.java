@@ -1,6 +1,8 @@
-package ZOO;
+package zoo.animal;
 
-public class Dog extends Animal{
+import command.Animal;
+
+public class Dog extends Animal {
 
     @Override
     public void say() {

@@ -1,4 +1,6 @@
-package ZOO;
+package zoo.animal;
+
+import command.Animal;
 
 public class Cat extends Animal {
 

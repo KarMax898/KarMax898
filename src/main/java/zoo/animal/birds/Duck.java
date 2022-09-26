@@ -1,6 +1,9 @@
-package ZOO;
+package zoo.animal.birds;
 
-public class Duck extends Animal implements IFlying{
+import command.Animal;
+import command.IFlying;
+
+public class Duck extends Animal implements IFlying {
     @Override
     public void say() {
         System.out.println("Кря Кря");

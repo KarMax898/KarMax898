@@ -1,4 +1,8 @@
-package ZOO;
+package command;
+
+import zoo.animal.Cat;
+import zoo.animal.Dog;
+import zoo.animal.birds.Duck;
 
 import java.util.ArrayList;
 import java.util.Scanner;

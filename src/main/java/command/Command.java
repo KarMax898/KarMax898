@@ -1,4 +1,4 @@
-package ZOO;
+package command;
 
 public enum Command {
 

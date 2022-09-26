@@ -1,6 +1,6 @@
-package ZOO;
+package command;
 
-public class Animal {
+abstract   class Animal {
 
     protected String name;
     protected int age;
