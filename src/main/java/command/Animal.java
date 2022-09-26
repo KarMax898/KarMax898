@@ -1,6 +1,6 @@
 package command;
 
-abstract   class Animal {
+public abstract   class Animal {
 
     protected String name;
     protected int age;

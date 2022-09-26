@@ -87,7 +87,7 @@ public class App {
                     }
                 }
                 case LIST -> System.out.println(animals);
-                case EXIT -> proverka = false;
+                case EXIT -> System.exit(0);
 
 
 
