@@ -1,7 +1,6 @@
-package zoo.animal.birds;
+package animal.birds;
 
-import command.Animal;
-import command.IFlying;
+import animal.Animal;
 
 public class Duck extends Animal implements IFlying {
     @Override

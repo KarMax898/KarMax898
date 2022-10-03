@@ -1,6 +1,6 @@
-package zoo.animal;
+package animal.pets;
 
-import command.Animal;
+import animal.Animal;
 
 public class Dog extends Animal {
 

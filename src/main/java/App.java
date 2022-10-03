@@ -1,8 +1,8 @@
-package command;
-
-import zoo.animal.Cat;
-import zoo.animal.Dog;
-import zoo.animal.birds.Duck;
+import animal.Animal;
+import data.Command;
+import animal.pets.Cat;
+import animal.pets.Dog;
+import animal.birds.Duck;
 
 import java.util.ArrayList;
 import java.util.Scanner;
@@ -34,7 +34,22 @@ public class App {
         while (proverka) {
 
             System.out.println("Веберите команду add/list/exit");
-            Command an = Command.valueOf(vvod.next().toUpperCase().trim());
+            String input = vvod.next().toUpperCase().trim();
+            boolean isExist = false;
+            for (Command item: Command.values()) {
+                if (item.name().equals(input) ) {
+                    isExist = true;
+                    break;
+
+                }
+            }
+            if (!isExist) {
+                System.out.println(" Нет такой команды");
+                continue;
+            }
+            Command an = Command.valueOf(input);
+
+
             switch (an){
                 case ADD -> {
                     System.out.println(" Выберите животное(cat/dog/duck)");
@@ -53,6 +68,7 @@ public class App {
                             cat.setColor(vvod.next());
                             System.out.println("Какой вес?");
                             cat.setWeight(vvod.nextInt());
+
                             animals.add(cat);
                             cat.say();
                         }
@@ -85,15 +101,13 @@ public class App {
                         }
                         default -> System.out.println( "Нет такого животного");
                     }
+
                 }
                 case LIST -> System.out.println(animals);
                 case EXIT -> System.exit(0);
-
-
-
+                
 
             }
-
 
 
             }

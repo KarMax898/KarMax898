@@ -1,4 +1,4 @@
-package command;
+package animal;
 
 public abstract   class Animal {
 
@@ -38,6 +38,7 @@ public abstract   class Animal {
 
     public void setWeight(int weight) {
         this.weight = weight;
+
     }
 
     public void eat() {
