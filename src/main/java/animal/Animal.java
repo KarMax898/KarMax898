@@ -66,10 +66,10 @@ public abstract   class Animal {
         int lastNumber = age % 10;
         int lastDoubleNumber = age % 100;
 
-        if (lastNumber == 1 && lastNumber != 11 && lastDoubleNumber != 11) {
+        if (lastNumber == 1 && lastNumber != 11 && lastDoubleNumber !=11) {
             return " год";
 
-        } else if (lastDoubleNumber > 11 && lastDoubleNumber < 14  ) {
+        } else if (lastDoubleNumber > 9 && lastDoubleNumber < 14  ) {
             return " лет ";
 
         } else if (lastNumber > 1 && lastNumber <  5 ) {
@@ -84,7 +84,7 @@ public abstract   class Animal {
 
     @Override
     public String toString() {
-        return "\n  Привет! меня зовут " + name + ", мне " + age + pokazatelVozrasta() + ", я вешу - "
+        return "\n" + "Привет! меня зовут " + name + ", мне " + age + pokazatelVozrasta() + ", я вешу - "
                 + weight + " кг, мой цвет - " + color + " " ;
     }
 }

@@ -51,6 +51,7 @@ public class App {
 
 
             switch (an){
+
                 case ADD -> {
                     System.out.println(" Выберите животное(cat/dog/duck)");
 
@@ -58,12 +59,16 @@ public class App {
 
 
                     switch (ani) {
+
+                       
+
                         case "cat" -> {
                             System.out.println("Какое имя?");
                             Cat cat = new Cat();
                             cat.setName(vvod.next());
                             System.out.println("Какой возраст?");
                             cat.setAge(vvod.nextInt());
+
                             System.out.println("Какой цвет?");
                             cat.setColor(vvod.next());
                             System.out.println("Какой вес?");
