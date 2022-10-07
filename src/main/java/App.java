@@ -25,7 +25,7 @@ public class App {
         Animal animal = new Animal();
         System.out.println(animal);*/
 
-        ArrayList<Animal> animals =new ArrayList<>();
+        ArrayList<Animal> animals = new ArrayList<>();
 
         Scanner vvod = new Scanner(System.in);
 
@@ -36,8 +36,8 @@ public class App {
             System.out.println("Веберите команду add/list/exit");
             String input = vvod.next().toUpperCase().trim();
             boolean isExist = false;
-            for (Command item: Command.values()) {
-                if (item.name().equals(input) ) {
+            for (Command item : Command.values()) {
+                if (item.name().equals(input)) {
                     isExist = true;
                     break;
 
@@ -47,78 +47,82 @@ public class App {
                 System.out.println(" Нет такой команды");
                 continue;
             }
-            Command an = Command.valueOf(input);
+            Command command = Command.valueOf(input);
 
 
-            switch (an){
+            switch (command) {
 
                 case ADD -> {
                     System.out.println(" Выберите животное(cat/dog/duck)");
 
                     String ani = vvod.next();
-
-
+                    Animal pet = null;
                     switch (ani) {
 
-                       
-
                         case "cat" -> {
-                            System.out.println("Какое имя?");
-                            Cat cat = new Cat();
-                            cat.setName(vvod.next());
-                            System.out.println("Какой возраст?");
-                            cat.setAge(vvod.nextInt());
-
-                            System.out.println("Какой цвет?");
-                            cat.setColor(vvod.next());
-                            System.out.println("Какой вес?");
-                            cat.setWeight(vvod.nextInt());
-
-                            animals.add(cat);
-                            cat.say();
+                            pet = new Cat();
                         }
                         case "dog" -> {
-                            System.out.println("Какое имя?");
-                            Dog dog = new Dog();
-                            dog.setName(vvod.next());
-                            System.out.println("Какой возраст?");
-                            dog.setAge(vvod.nextInt());
-                            System.out.println("Какой цвет?");
-                            dog.setColor(vvod.next());
-                            System.out.println("Какой вес?");
-                            dog.setWeight(vvod.nextInt());
-                            animals.add(dog);
-                            dog.say();
+                            pet = new Dog();
                         }
                         case "duck" -> {
-                            System.out.println("Какое имя?");
-                            Duck duck = new Duck();
-                            duck.setName(vvod.next());
-                            System.out.println("Какой возраст?");
-                            duck.setAge(vvod.nextInt());
-                            System.out.println("Какой цвет?");
-                            duck.setColor(vvod.next());
-                            System.out.println("Какой вес?");
-                            duck.setWeight(vvod.nextInt());
-                            animals.add(duck);
-                            duck.fly();
-                            duck.say();
+                            pet = new Duck();
+
                         }
-                        default -> System.out.println( "Нет такого животного");
+
+                        default -> System.out.println("Нет такого животного");
                     }
+
+                    System.out.println("Какое имя?");
+
+                    pet.setName(vvod.next());
+                    while (true) {
+                        System.out.println("Какой возраст?");
+                        String years = vvod.next();
+                        if (isNumber(years)) {
+                            pet.setAge(Integer.parseInt(years));
+                            break;
+                        }
+                        System.out.println("  Вы ввели неверный возраст");
+                    }
+
+                    System.out.println("Какой цвет?");
+                    pet.setColor(vvod.next());
+                    while (true) {
+                        System.out.println("Какой вес?");
+                        String years = vvod.next();
+                        if (isNumber(years)) {
+                            pet.setWeight(Integer.parseInt(years));
+                            break;
+                        }
+                        System.out.println("  Вы ввели неверный вес");
+                    }
+                    animals.add(pet);
+                    pet.say();
+
+
 
                 }
                 case LIST -> System.out.println(animals);
                 case EXIT -> System.exit(0);
-                
-
-            }
 
 
             }
+
+
+        }
+    }
+
+    private static boolean isNumber(String str) {
+        try {
+            int number = Integer.parseInt(str);
+            return number > 0;
+        } catch (NumberFormatException ignore) {
+            return false;
         }
 
     }
+}
 
 
 

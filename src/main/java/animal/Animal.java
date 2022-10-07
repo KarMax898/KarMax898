@@ -1,6 +1,6 @@
 package animal;
 
-public abstract   class Animal {
+public abstract class Animal {
 
     protected String name;
     protected int age;
@@ -64,21 +64,23 @@ public abstract   class Animal {
     private String pokazatelVozrasta() {
 
         int lastNumber = age % 10;
-        int lastDoubleNumber = age % 100;
 
-        if (lastNumber == 1 && lastNumber != 11 && lastDoubleNumber !=11) {
-            return " год";
 
-        } else if (lastDoubleNumber > 9 && lastDoubleNumber < 14  ) {
-            return " лет ";
+        if (age >= 5 && age <= 14   ) {
+            return " лет";
 
-        } else if (lastNumber > 1 && lastNumber <  5 ) {
+        }
+        if (lastNumber == 1  ) {
+            return " год ";
+
+        }
+        if (lastNumber > 1 && lastNumber <  5 ) {
             return " года";
 
 
-        } else{
-            return " лет";
         }
+        return " лет";
+
 
     }
 
