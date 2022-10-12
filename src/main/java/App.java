@@ -30,8 +30,8 @@ public class App {
         Scanner vvod = new Scanner(System.in);
 
 
-        boolean proverka = true;
-        while (proverka) {
+
+        while (true) {
 
             System.out.println("Веберите команду add/list/exit");
             String input = vvod.next().toUpperCase().trim();
@@ -67,10 +67,13 @@ public class App {
                         }
                         case "duck" -> {
                             pet = new Duck();
-
                         }
 
-                        default -> System.out.println("Нет такого животного");
+                        default -> {
+                            System.out.println("Нет такого животного");
+                            continue;
+                        }
+
                     }
 
                     System.out.println("Какое имя?");
